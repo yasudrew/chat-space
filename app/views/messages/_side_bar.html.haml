@@ -2,13 +2,13 @@
    .side-bar__side-header
       .side-bar__side-header__box
          %p.side-bar__side-header__box__name
-            masa
+            = current_user.name if user_signed_in?
          %ul.side-bar__side-header__box__menu
             %li.side-bar__side-header__box__new-group
             = link_to "#" do
                = icon('far fa-edit',  class: "side-bar__side-header__box__menu--new-group--icon")
             %li.side-bar__side-header__box__edit-user
-            = link_to "#" do
+            = link_to edit_user_path(current_user) do
                = icon('fas fa-cog',  class: "side-bar__side-header__box__menu--edit-user--icon")
    .side-bar__grouplist
       = link_to "#" do

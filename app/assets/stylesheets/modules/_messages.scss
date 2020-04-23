@@ -45,19 +45,21 @@ $white:#ffffff;
   &__grouplist{
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+
     a{
       text-decoration: none;
     }
     &__group{
       font-weight: bold;
-      color: $white;
       padding: 20px 20px 40px 20px;
       &__group-name{
         font-size: 15px;
         padding-bottom: 5px;
+        color: $white;
       }
       &__latest-message{
         font-size: 11px;
+        color: $white;
       }
     }
   }

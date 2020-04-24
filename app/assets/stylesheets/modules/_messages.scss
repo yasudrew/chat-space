@@ -120,9 +120,10 @@ $white:#ffffff;
         }
       }
       &__text{
+        &__content{
           font-size: 14px;
           color: #434A54;
-
+        }
       }
     }
   }
@@ -130,9 +131,9 @@ $white:#ffffff;
    background-color: #d2d2d2;
    height: 90px;
    padding: 20px 40px;
-    &__new-message{
+    .new_message{
       display: flex;
-      &__input-box{
+      .main-chat__message-form__input-box{
         width: 100%;
         display: flex;
         position: relative;
@@ -153,17 +154,19 @@ $white:#ffffff;
           display: none;
           }
         }
-      }
- 
-      .submit-btn{
-        width: 100px;
-        height: 50px;
-        padding: 0 30px;
-        margin-left: 15px;
-        background-color: #38aef0;
-        color: white;
-        cursor: pointer;
-      }
+        &__submit-btn{
+          width: 100px;
+          height: 50px;
+          padding: 0 30px;
+          margin-left: 15px;
+          background-color: #38aef0;
+          color: white;
+          cursor: pointer;
+        }
+     }
+
+
+     
     }
   }
  }
